@@ -1,0 +1,8 @@
+# Ignora tutto, poi includi solo quello che serve
+*
+!.gitignore
+!README.md
+!Makefile
+!progetto.c
+!test_pubblici/
+!test_pubblici/**
