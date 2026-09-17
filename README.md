@@ -46,6 +46,7 @@ Vincoli: C11, solo libreria standard, niente multithreading.
 
 ## ⚙️ Scelte implementative
 * **Mappa come array 1D** (`y * colonne + x`): una sola `malloc`, accessi contigui.
+* **Lista** associata ad ogni cella per associare le rotte aeree.
 * **`travel_cost` → Dijkstra con min-heap binario** preallocato per mappa, con uscita anticipata all'estrazione della destinazione.
 * **`change_cost` → BFS** limitata al raggio (vicini dipendenti dalla parità della riga).
 * **Cache dei percorsi**: hash table da 8192 elementi con *doppio hashing*, invalidata solo quando la mappa cambia.
